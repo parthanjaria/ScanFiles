@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.github.glomadrian.dashedcircularprogress.DashedCircularProgress
+        android:id="@+id/progress"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:gravity="center"
+        custom:base_color="#987654"
+        custom:duration="0"
+        custom:external_color="@android:color/transparent"
+        custom:max="100"
+        custom:min="0"
+        custom:progress_color="#000000"
+        custom:progress_icon="@drawable/speed"
+        android:layout_centerInParent="true"
+        >
+
+
+    </com.github.glomadrian.dashedcircularprogress.DashedCircularProgress>
+    <TextView
+        android:id="@+id/total_files"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="23sp"
+        android:layout_centerInParent="true"
+        android:text="0\nFiles Scanned"
+        />
+</RelativeLayout>
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+    <Button
+        android:id="@+id/scan_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/start" />
+    <Button
+        android:id="@+id/report_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/report" />
+</LinearLayout>
+</LinearLayout>

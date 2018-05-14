@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ScanFiles</string>
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+    <string name="report">REPORT</string>
+    <string name="preference_file_key">scanfiles_sharedpref</string>
+    <string name="preference_files_names">files_names</string>
+    <string name="preference_total_files">total_files</string>
+    <string name="preference_total_files_size">total_files_size</string>
+    <string name="preference_file_exe">file_exe</string>
+</resources>
